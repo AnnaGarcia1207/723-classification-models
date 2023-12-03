@@ -70,7 +70,7 @@ py -3.11 -m virtualenv venv
     ```
 
 ## To Re-trained the model (not required, but available)
-This is not required because all models are pre-trained and saved using the pickle library. The pre-trained models are in `models/` and the datasets are located in `dataset/`. If you are missing teh models under `models/` then please run the command below:
+This is not required because all models are pre-trained and saved using the pickle library. The pre-trained models are in `models/` and the datasets are located in `dataset/`. If you are missing the models under `models/` then please run the command below:
 
 ```
 python trained_models.py
