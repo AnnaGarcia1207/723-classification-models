@@ -87,6 +87,11 @@ You should see an output:
 
 ![python app.py](readMeImages/webExample.PNG)
 
+After hitting submit you should see result output below:
+
+![python app.py submit](readMeImages/submitExample.PNG)
+
+
 13. To close the program simple pres `Ctrl+c` and deactivate the `venv` virtual environment
 ```
 deactivate
