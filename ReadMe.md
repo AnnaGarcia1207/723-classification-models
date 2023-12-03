@@ -69,6 +69,17 @@ py -3.11 -m virtualenv venv
     pip install tensorflow, pandas, scikit-learn, flask
     ```
 
+## To Re-trained the model (not required, but available)
+This is not required because all models are pre-trained and saved using the pickle library. The pre-trained models are in `models/` and the datasets are located in `dataset/`. If you are missing teh models under `models/` then please run the command below:
+
+```
+python trained_models.py
+```
+
+This will run the replaced the saved models and replaced with newly ran models. It will get saved in the same location.
+
+
+
 ## Running the program
 
 Now that your environment is setup, you can explore the models two different ways. There is a Flask web application (appy.py) and a simple python script (metrics.py). 
@@ -125,11 +136,3 @@ Q: Quit the program
 deactivate
 ```
 -------
-## To Re-trained the model
-This is not required because all models are pre-trained and saved using the pickle library. The pre-trained models are in `models/` and the datasets are located in `dataset/`. To train the models again follow the setup, stop prior to runnig the program instructions.
-
-```
-python trained_models.py
-```
-
-This will run the replaced the saved models and replaced with newly ran models. It will get saved in the same location.
