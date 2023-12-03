@@ -21,28 +21,30 @@ The models are pre-trained and they are stored under `/models` and the datasets 
 > Download from [code.visualstudio.com](https://code.visualstudio.com/download)
 
 ## Setup
-1. Ensure that you have python3 running in your machine. Specifically python3.9, 3.10, or 3.11
+1. Ensure that you have python3 running in your machine. Specifically `python 3.11`
 To check from command line:
 
 ```
 python –-version
 ```
-2. Make sure you have Git installed on your machine.
+2. Make sure you have Git installed in your machine.
 ```
 git –-version
 ```
 
 3. Open your favorite commandline
 
-4. Clone the repository
+4. Clone the repository:
 ```
 git clone https://github.com/AnnaGarcia1207/723-classification-models.git
 ```
 
 5. `cd` into the directory.
-    * You can keep using teh commandline from here or use VisualStudioCode
+    * You can keep using the commandline from here or use VisualStudioCode
 
-6. From the directory, check the python version you are using: `python –-version`. If you are using the latest python version 3.12 and above we need to use the earlier version to download the required libraries in a python virtual environment.
+6. From the directory, check the python version you are using: `python –-version`. If you are using the latest python version - `3.12 and above`, we need to use the earlier version to download the required libraries in a python virtual environment.
+
+** As of 12/2/2023, tensorflow library cannot be installed using pip, only python 3.9, 3.10, and 3.11.
 
 7. Go back to the command line. From the directory, download python virtualenv
 ```
@@ -55,7 +57,7 @@ py -3.11 -m virtualenv venv
 
 9. You should see 'venv/' folder get created. We need to activate this virtual environment, so all of out libraries is contained within the `venv/` folder.
 ```
-.\venv\Scripts\activate
+./venv/Scripts/activate
 ```
 
 10. You should see `(venv)` in the commandline- meaning it was successfully activated.
@@ -73,6 +75,8 @@ py -3.11 -m virtualenv venv
 This is not required because all models are pre-trained and saved using the pickle library. The pre-trained models are in `models/` and the datasets are located in `dataset/`. If you are missing the models under `models/` then please run the command below:
 
 ```
+mkdir models -- if missing directory
+
 python trained_models.py
 ```
 
