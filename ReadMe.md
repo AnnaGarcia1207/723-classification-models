@@ -10,6 +10,8 @@ This is a class project that explores different binary classification models nam
 Naive Bayes, k-Nearest Neighbor, and a simple Neural Network. The project uses the Heart Disease dataset from [Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset). The project can be ran two ways: as a web application and locally.
 The web application (appy.py) that runs locally, which allows the user to input their own data, while metrics.py allows user to visualize the metrics of the models.
 
+The models are pre-trained and they are stored under `/models` and the datasets are in `/dataset`.
+
 ## Required Software
 1. Python 3.11. 
 > Download from [python.org](https://www.python.org/downloads/release/python-3115/) - Use Windows installer
@@ -122,4 +124,12 @@ Q: Quit the program
 ```
 deactivate
 ```
+-------
+## To Re-trained the model
+This is not required because all models are pre-trained and saved using the pickle library. The pre-trained models are in `models/` and the datasets are located in `dataset/`. To train the models again follow the setup, stop prior to runnig the program instructions.
 
+```
+python trained_models.py
+```
+
+This will run the replaced the saved models and replaced with newly ran models. It will get saved in the same location.
