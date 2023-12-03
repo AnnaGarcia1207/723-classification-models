@@ -39,6 +39,13 @@ git –-version
 git clone https://github.com/AnnaGarcia1207/723-classification-models.git
 ```
 
+** If downloaded from git or Canvas, unzip the file
+
+```
+unzip 723_classification_project.zip
+```
+
+
 5. `cd` into the directory.
     * You can keep using the commandline from here or use VisualStudioCode
 
